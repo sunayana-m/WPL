@@ -11,29 +11,23 @@
 <body>
 
     <script>
-        function checkleapyr(year) {
+        function checkLeapYear(year) {
             if (year % 400 == 0) {
-                document.write(year + "  LEAP YEAR" + "<br/>");
+                document.write(year + "<br/>");
                 return;
-            } else if (year % 100 == 0) {
-                document.write(year + " LEAP YEAR" + "<br/>");
+            } else if (year % 100 == 0)
                 return;
-            } else if (year % 4 == 0) {
-                document.write(year + " LEAP YEAR" + "<br/>");
+            else if (year % 4 == 0) {
+                document.write(year + "<br/>");
                 return;
-
-            } else {
-
+            } else
                 return;
-
-            }
         }
-        var start = prompt("enter the start year");
-        var end = prompt("enter the end year");
-        for (var i = start; i < end; i++) {
-
-            checkleapyr(i);
-        }
+        var start = prompt("Enter the start year: ");
+        var end = prompt("Enter the end year: ");
+        document.write("Leap years in the range " + start + " - " + end + " are: <br/>");
+        for (var i = start; i < end; i++)
+            checkLeapYear(i);
     </script>
 </body>
 
