@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function jumpSearch(a, k, n) {
+            let step = Math.sqrt(n);
+            let prev = 0;
+            while (a[Math.min(step, n) - 1] < k) {
+                prev = step;
+                step += Math.sqrt(n);
+                if (prev >= n)
+                    return -1;
+            }
+            while (a[prev] < k) {
+                prev++;
+                if (prev == Math.min(step, n))
+                    return -1;
+            }
+            if (a[prev] == k)
+                return prev;
+            return -1;
+        }
+        let arr = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610];
+        let k = prompt("Enter the key:");
+        let l = arr.length;
+        let index = jumpSearch(arr, k, l);
+        if (index >= 0 && index <= l)
+            document.write("Success");
+        else
+            document.write("Failure");
+    </script>
+
+</body>
+
+</html>

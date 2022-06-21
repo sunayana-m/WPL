@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String length</title>
+</head>
+
+<body>
+    <script>
+        var t1 = prompt("Enter the 1st text:");
+        var len1 = t1.length;
+        alert(len1);
+        var t2 = prompt("Enter the 2nd text:");
+        var len2 = t2.length;
+        alert(len2);
+        var t3 = prompt("Enter the 3rd text:");
+        var len3 = t3.length;
+        alert(len3);
+
+        var len = prompt("Enter the length of string you are searching for:");
+        if (len == len1)
+            document.write(t1);
+        else if (len == len2)
+            document.write(t2);
+        else if (len == len3)
+            document.write(t3);
+        else
+            document.write("Desired length string is not found");
+    </script>
+</body>
+
+</html>
