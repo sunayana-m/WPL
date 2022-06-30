@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initialscale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //charAt function:
+        var fun = prompt("Enter a string");
+        alert("Character at index 3 in the given string is: " + fun.charAt(3));
+
+        //concate function:
+        var s1 = prompt("Enter the string 1:");
+        var s2 = prompt("Enter the string 2:");
+        var s3 = s1.concat(s2);
+        alert("Cancatenated string: " + s3);
+
+        //string length
+        var a = prompt("Enter a string to find the length of the string: ");
+        var l = a.length;
+        alert("Length of the given string: " + l);
+
+        //string to uppercase
+        var b = prompt("Enter a string to convert to upper-case:");
+        var ans = b.toUpperCase();
+        alert(ans);
+
+        //string to lowercase
+        var c = prompt("Enter a string to convert to lower-case:");
+        var ans = c.toLowerCase();
+        alert(ans);
+
+        //string slice
+        var s = prompt("Enter a string to be sliced:");
+        var n1 = (parseInt(prompt("Enter the starting index:")));
+        var n2 = (parseInt(prompt("Enter the ending index:")));
+        var ss = s.slice(n1, n2);
+        alert("sliced string: " + ss);
+
+        //substring
+        var s = prompt("Enter the text to get substring:");
+        var n1 = (parseInt(prompt("Enter the starting index:")));
+        var n2 = (parseInt(prompt("Enter the ending index:")));
+        var sub = s.substr(n1, n2);
+        alert(sub);
+
+        //replace
+        var s = prompt("Enter a string:");
+        var w1 = prompt("Enter the word you want to replace:");
+        var w2 = prompt("Enter the replacing word:");
+        var ns = s.replace(w1, w2);
+        alert(ns);
+    </script>
+</body>
+</html
